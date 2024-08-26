@@ -22,7 +22,7 @@ namespace Memoria
         
         public MemoriaAbs()
         {
-     
+    
             int i = 0;
             while( i < MEM.Length)
             {

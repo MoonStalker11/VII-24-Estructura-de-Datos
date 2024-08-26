@@ -65,17 +65,15 @@ namespace Memoria
 
         public override void espacio_palabra(string cadena)
         {
-           
             
             int d = libre;
             for (int i = 0; i < cadena.Length; i++)
             {
-             
+            
                 string letra = cadena[i].ToString();            
                 MEM[d].dato = letra;
                 d = MEM[d].link;
-                           
-
+            
             }
             libre = MEM[d-1].link;
             MEM[d-1].link = -1;
