@@ -7,12 +7,27 @@ namespace Memoria
         static void Main(string[] args)
         {
             MemoriaImp memoria = new MemoriaImp();
-            ListaImp lista1 = new ListaImp(memoria);
-            ListaImp lista2 = new ListaImp(memoria);
-            
-            //PilaImp pila = new PilaImp(memoria);
+            ListaImp lista = new ListaImp(memoria);
+            PilaImp pila = new PilaImp(memoria);
             //ColaImp cola = new ColaImp(memoria);
             
+            pila.meter("hola");
+            pila.meter("adios");
+            pila.meter("nuevo");
+            Console.WriteLine(pila.mostrar_pila());
+            memoria.mostrar();
+
+            /*
+            pila.meter("hola");
+            lista.insertar(0, "l1");
+            lista.insertar(lista.primero(), "l2");
+            memoria.new_espacio(2);
+            pila.meter("adios");
+            memoria.mostrar();
+            */
+
+
+            /*
             lista1.insertar(0, "o");
             lista2.insertar(1, "9");
             lista1.insertar(lista1.primero(), "h");
@@ -23,7 +38,7 @@ namespace Memoria
 
             memoria.mostrar();
             Console.WriteLine("lista 1: " + lista1.mostrar_lista());
-
+            */
 
             /*
             lista.insertar(0,"hola");

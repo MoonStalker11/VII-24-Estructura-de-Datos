@@ -81,5 +81,10 @@ namespace Memoria
             }
             return cola_ordenada.TrimStart(',', ' ');
         }
+
+        public override int anterior(int dir)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

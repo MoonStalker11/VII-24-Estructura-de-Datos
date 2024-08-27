@@ -23,10 +23,11 @@ namespace Memoria
 
         }
 
-        public abstract bool vacia();
-        public abstract string primero();
-        public abstract void poner(string elemento);
-        public abstract string sacar();
+        public abstract bool vacia(); // devuelve true si la lista esta vacia
+        public abstract int anterior(int dir); // devuelve la direccion del elemento anterior al enviado
+        public abstract string primero(); // mostrar el primer elemento sin sacarlo
+        public abstract void poner(string dato); // ingresar un elemento a la cola
+        public abstract string sacar(); // mostrar el primer elemento sacandolo de la cola
         public abstract int posterior(int dir);
     }
 }

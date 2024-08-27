@@ -84,7 +84,7 @@ namespace Memoria
                 meter(dato);
             }
 
-            return ordenado;
+            return ordenado.TrimStart(',', ' ');
         }
 
         public override string sacar()
